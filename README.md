@@ -10,7 +10,7 @@ Instructions: Simply run the .html files for questions.
 
 - [Lab 3](https://github.com/avani17101/Data-Visualizations/tree/master/Dv_Lab3)
 
-  Observable links
+  Observable notebook links for visualization
   
     - [COVID19 spread graph](https://observablehq.com/d/a6caf7ce89d4a040)
     - [Basic batsman ratings interactive visualization](https://observablehq.com/d/a6caf7ce89d4a040)

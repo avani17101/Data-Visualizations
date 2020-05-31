@@ -1,0 +1,28 @@
+
+
+    .cir {
+
+        fill: steelblue;
+    }
+    .axis { 
+        font: 15px sans-serif;
+        }
+        svg text {
+            fill: white;
+            font: 10px sans-serif;
+            text-anchor: end;
+        }
+        input[type="radio"] {
+            margin: 5px 0;
+            width: 3%;
+          }
+          body {
+            font-weight: bold;
+              margin: 5px 0;
+              font-size: 20px;
+              color: steelblue;
+          }
+          label{
+              font-size: 18px;
+          }
+    

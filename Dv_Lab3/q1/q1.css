@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    font-family: "Lato";
+    overflow: hidden;
+  }
+
+  rect {
+    fill: purple;
+  }
+  h2 {
+    text-align: center;
+  }
+  div.tooltip {
+    color: #fff;;
+    height: 60px;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    width: 80px;
+    background: black;
+    padding-top: 15px;
+    pointer-events: none;
+  }
+
+  * {
+    margin: 0px;
+    overflow: hidden;
+  }
+  circle {
+    opacity: 0.5;
+  }
+
+  .t {
+    display: flex;
+  }
+
+  svg circle:hover {
+    fill:pink;
+    cursor: pointer;
+  }
+  body {
+    padding: 30px;
+  }

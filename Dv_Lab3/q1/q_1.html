@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./q1.css" />
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  </head>
+  <script></script>
+  <body>
+    <h2><output name="selected_year" id="selected_year">2011</output></h2>
+    <h2>
+      <input
+        type="range"
+        min="2011"
+        max="2013"
+        step="1"
+        id="yearb"
+        value="2011"
+        oninput="selected_year.value = yearb.value"
+      />
+    </h2>
+    <div class="t">
+      <div class="bar-chart">
+        <svg width="900" height="500" class="bc"></svg>
+      </div>
+      <div class="bar-chart1">
+        <svg width="800" height="500" class="sp"></svg>
+      </div>
+    </div>
+
+    <script src="./q1.js"></script>
+  </body>
+</html>

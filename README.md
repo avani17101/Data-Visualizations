@@ -13,5 +13,5 @@ Instructions: Simply run the .html files for questions.
   Observable links
   
     - [COVID19 spread graph](https://observablehq.com/d/a6caf7ce89d4a040)
-    - [Basic batsman ratings interative visualization](https://observablehq.com/d/a6caf7ce89d4a040)
+    - [Basic batsman ratings interactive visualization](https://observablehq.com/d/a6caf7ce89d4a040)
 

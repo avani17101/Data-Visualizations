@@ -1,0 +1,23 @@
+.cir{
+    
+    transition: fill 0.3s ease;
+    cursor: pointer;
+    fill: red;
+}
+
+
+.cir:hover,
+.cir:focus {
+fill: black;
+}
+.cir text {
+    color: black;
+  }
+.cir:hover text,
+.cir:focus text {
+  fill: red;
+}
+svg circle:hover {
+    fill: yellow;
+    cursor: pointer;
+  }

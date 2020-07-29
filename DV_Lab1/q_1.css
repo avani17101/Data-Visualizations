@@ -1,0 +1,26 @@
+.classsvg{
+  transform: rotate(180deg);
+}
+
+.bar1{
+    
+    transition: fill 0.3s ease;
+    cursor: pointer;
+    fill: red;
+}
+.bar2{
+    transition: fill 0.3s ease;
+    cursor: pointer;
+    fill: blue;
+
+}
+
+.bar1:hover,
+.bar1:focus {
+  fill: black;
+}
+.bar2:hover,
+.bar2:focus {
+  fill: black;
+}
+

@@ -1,0 +1,69 @@
+<html>
+<head>
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="./q_4.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<svg 
+width="550"
+height="600"
+id="svgOne"
+class= "classsvg"
+> 
+
+</svg>
+<svg 
+width="50%"
+height="600"
+id="svgTwo"
+
+> 
+
+</svg>
+
+<script type="text/javascript">
+
+var svgns = "http://www.w3.org/2000/svg";
+
+function rectan()
+{
+X= [10.0, 8.0, 13.0, 9.0, 11.0, 14.0, 6.0 ,4.0, 12.0, 7.0, 5.0]
+Y = [8.04,6.95, 7.58, 8.81, 8.33, 9.96, 7.24, 4.26, 10.84, 4.82, 5.68]
+yd = 40
+// YD = [40,80,120,160,200,240,280,320,360,400,440]
+for (var i = 0; i < 11; i++) {
+    var w = X[i]*5;
+        // y = Y[i];
+
+        yd = yd+40;
+        ht = 35;
+        color= 'red';
+        tit = ([X[i],Y[i]]).toString()
+        console.log(tit)
+        
+
+    var circle = document.createElementNS(svgns, 'circle');
+    circle.setAttributeNS(null, 'cx', X[i]*20);
+    circle.setAttributeNS(null, 'cy', 300-Y[i]*20);
+    circle.setAttributeNS(null, 'r',5);
+    circle.setAttributeNS(null,"class","cir")
+    circle.setAttributeNS(null,'id',i)
+
+   
+    document.getElementById('svgOne').appendChild(circle);
+    document.getElementById(i).innerHTML="<title>"+tit+"</title>"
+}
+
+}
+rectan();
+</script>
+</body>
+</html>

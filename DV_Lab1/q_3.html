@@ -1,0 +1,87 @@
+<html>
+<head>
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="./q_3.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<svg 
+width="400"
+height="500"
+id="svgOne"
+class= "line1"
+> 
+
+</svg>
+<svg 
+width="500"
+height="500"
+id="svgTwo"
+class = "line2"
+> 
+</svg>
+
+<script type="text/javascript">
+
+var svgns = "http://www.w3.org/2000/svg";
+
+function ploylinean()
+{
+X= [10.0, 8.0, 13.0, 9.0, 11.0, 14.0, 6.0 ,4.0, 12.0, 7.0, 5.0,0]
+Y = [0,8.04,6.95, 7.58, 8.81, 8.33, 9.96, 7.24, 4.26, 10.84, 4.82, 5.68,0]
+
+var s = "M "
+// s = s.concat("0 0 L ")
+console.log(s)
+for (var i = 1; i < 13; i++) 
+{
+    s = s.concat((i*20).toString());
+    s = s.concat(" ");
+    s= s.concat(((300-X[i]*10).toString()));
+    s = s.concat(" ")
+    s= s.concat("L ")
+}
+
+s = s.substring(0, s.length - 2);
+console.log(s)
+
+var path = document.createElementNS(svgns, 'path');
+path.setAttributeNS(null, 'd', s );
+path.setAttributeNS(null, 'stroke', "red");
+path.setAttributeNS(null, 'stroke-width', "1");
+path.setAttributeNS(null, 'fill','red');
+path.setAttributeNS(null, 'class','x')
+path.setAttributeNS(null, 'transform','translate(200,10)');
+path.setAttributeNS(null, 'transform','rotate(250 150 200)');
+document.getElementById('svgOne').appendChild(path);
+
+var pointarray = []
+for (var i = 0; i < 11; i++) {
+    pointarray.push([i*20, 300-Y[i]*10]);}
+var ployline = document.createElementNS(svgns, 'polyline');
+ployline.setAttributeNS(null, 'points', pointarray );
+ployline.setAttributeNS(null, 'stroke', "#0074d9");    
+ployline.setAttributeNS(null, 'stroke-width', "3");
+ployline.setAttributeNS(null, 'fill','blue');
+ployline.setAttributeNS(null, 'transform','translate(10,10)');
+ployline.setAttributeNS(null, 'transform','rotate(105,150 200)');
+
+document.getElementById('svgTwo').appendChild(ployline);
+}
+
+
+ploylinean();
+var w = window.innerWidth;
+console.log(w)
+var h = window.innerHeight;
+console.log(h)
+</script>
+</body>
+</html>
